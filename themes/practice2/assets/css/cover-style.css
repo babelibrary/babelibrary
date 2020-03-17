@@ -27,6 +27,15 @@ body::-webkit-scrollbar-track
   background: #000;
 }
 
+code.has-jax
+{
+  font: inherit;
+  font-size: 100%;
+  background: inherit;
+  border: inherit;
+  color: #000;
+}
+
 .cover
 {
   min-height: 550px;

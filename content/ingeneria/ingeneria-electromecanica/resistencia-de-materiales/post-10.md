@@ -17,5 +17,8 @@ Un modelo de resistencia de materiales establece una relación entre las fuerzas
 
 Para el diseño mecánico de elementos con geometrías complicadas la resistencia de materiales suele ser abundante y es necesario usar técnicas basadas en la teoría de la elasticidad o la mecánica de sólidos deformables más generales. Esos problemas planteados en términos de tensiones y deformaciones pueden entonces ser resueltos de forma muy aproximada con métodos numéricos como el análisis por elementos finitos.
 
-When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
-  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
+When `$ \frac{a}{b} $`
+
+`$ \frac{a}{b}\oint_{1}^{2}x_{a}^{b}\Theta \Delta \iint_{1}^{2} $`
+
+`$$ \frac{a}{b}\oint_{1}^{2}x_{a}^{b}\Theta \Delta \iint_{1}^{2} $$`
