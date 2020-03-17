@@ -1,0 +1,3 @@
+[submodule "babelibrary.github.io"]
+	path = babelibrary.github.io
+	url = git@github.com-babelibrary:babelibrary/babelibrary.github.io.git
