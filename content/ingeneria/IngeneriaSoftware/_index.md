@@ -5,7 +5,8 @@ draft: false
 isSection: true
 img: 
 - front.jpg
-cover_img: "ingenieria-cover.png"
+cover_img:
+- ingenieria-cover.png
 areas_del_saber: [["Física", "fisi"], ["Matematicas", "mat"]]
 ---
 

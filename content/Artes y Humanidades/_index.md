@@ -3,7 +3,8 @@ title: "Artes y Humanidades"
 date: 2020-03-11T23:36:12-05:00
 draft: false
 isSection: true
-cover_img: "arte-cover.jpg"
+cover_img:
+- arte-cover.jpg
 img: 
 - front.jpg
 - Nacimiento de Venus

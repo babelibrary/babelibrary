@@ -5,7 +5,8 @@ draft: false
 img: 
 - img2.jpg
 - yotsuba
-cover_img: "ingenieria-cover.png"
+cover_img:
+- ingenieria-cover.png
 areas_del_saber: [["Física", "fisi"], ["Matematicas", "mat"]]
 subarea_de: [["ingeniería aeroespacial", "as"], ["ingeniería automotriz"], ["ingeniería industrial"]]
 ---

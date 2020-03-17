@@ -5,7 +5,9 @@ draft: false
 isSection: true
 img: 
 - front.jpg
-cover_img: "ingenieria-cover.png"
+- description
+cover_img:
+- ingenieria-cover.png
 description: true
 ---
 La Ingeniería es el conjunto de conocimientos científicos y tecnológicos para la innovación, invención, desarrollo y mejora de técnicas y herramientas para satisfacer las necesidades y resolver problemas tanto de las personas, así como de la sociedad.

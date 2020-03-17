@@ -8,6 +8,7 @@ cover_img: "ingenieria.png" #Imagen de fondo en el header, la imagen debe estar 
 img: 
 - cover.jpg   #Imagen cover, la imagen tiene que estar en la misma carpeta del md
 - descripcion #Descripcion Imagen Cover
+- true #si la imagen es un link escribir cualquier cosa, en este caso "true" si no es link quitar esta linea
 areas_del_saber: [["Física", "fisi"], ["Matematicas", "mat"]]
 subarea_de: [["ingeniería aeroespacial", "as"], ["ingeniería automotriz"], ["ingeniería industrial"]]
 description: true #Si el contenido del markdown se muestra en el header
