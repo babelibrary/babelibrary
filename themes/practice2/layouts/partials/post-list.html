@@ -15,28 +15,10 @@
     {{ $listStyle := resources.Get "css/list-style.css" }}
     <link rel="stylesheet" type="text/css" href="{{ $listStyle.Permalink }}">
 
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    {{ $CoverImgLink := print "img/" .Params.cover_img }}
-    {{ $CoverImg := $CoverImgLink | absURL }} <!-- El print une en los dos string -->
-
-    <style>
-      .cover
-      {
-        background: -webkit-linear-gradient(rgba(17, 17, 19, 0.8), rgba(17, 17, 19, 0.8)), url("{{ $CoverImg }}");
-        background: linear-gradient(rgba(17, 17, 19, 0.8), rgba(17, 17, 19, 0.8)), url("{{ $CoverImg }}"); /* The least supported option. */
-        background-attachment: fixed;
-      }     
-    </style>
-
-    {{ if not .Params.img }}
-      <style>
-        .cover-content > div
-        {
-          float: none;
-          margin: auto;
-        }
-      </style>
-    {{ end }} 
     <title>Babelibrary</title>
   </head>
   <body>

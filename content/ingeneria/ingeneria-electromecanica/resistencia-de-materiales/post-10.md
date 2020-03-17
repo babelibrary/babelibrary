@@ -16,3 +16,6 @@ La resistencia de materiales clásica es una disciplina de la ingeniería mecán
 Un modelo de resistencia de materiales establece una relación entre las fuerzas aplicadas, también llamadas cargas o acciones, y los esfuerzos y desplazamientos inducidos por ellas. Generalmente las simplificaciones geométricas y las restricciones impuestas sobre el modo de aplicación de las cargas hacen que el campo de deformaciones y tensiones sean sencillos de calcular.
 
 Para el diseño mecánico de elementos con geometrías complicadas la resistencia de materiales suele ser abundante y es necesario usar técnicas basadas en la teoría de la elasticidad o la mecánica de sólidos deformables más generales. Esos problemas planteados en términos de tensiones y deformaciones pueden entonces ser resueltos de forma muy aproximada con métodos numéricos como el análisis por elementos finitos.
+
+When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+  \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\]
