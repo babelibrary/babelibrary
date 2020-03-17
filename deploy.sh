@@ -23,3 +23,12 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
+
+# Now  update changes in the main repo <the site code>
+cd ..
+
+git add .
+
+git commit -m "$msg"
+
+git push origin master
