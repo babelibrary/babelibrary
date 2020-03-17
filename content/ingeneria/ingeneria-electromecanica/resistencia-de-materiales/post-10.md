@@ -11,7 +11,7 @@ areas_del_saber: [["Física", "fisi"], ["Matematicas", "mat"]]
 subarea_de: [["ingeniería aeroespacial", "as"], ["ingeniería automotriz"], ["ingeniería industrial"]]
 ---
 
-La resistencia de materiales clásica es una disciplina de la ingeniería mecánica, la ingeniería estructural, la ingeniería civil y la ingeniería de materiales que estudia la mecánica de sólidos deformables mediante modelos simplificados. La resistencia de un elemento se define como su capacidad para resistir esfuerzos y fuerzas aplicadas sin romperse, adquirir deformaciones permanentes o deteriorarse de algún modo.
+`$ \frac{a}{b}\oint_{1}^{2}x_{a}^{b}\Theta \Delta \iint_{1}^{2} $` La resistencia de materiales clásica es una disciplina de la ingeniería mecánica, la ingeniería estructural, la ingeniería civil y la ingeniería de materiales que estudia la mecánica de sólidos deformables mediante modelos simplificados. La resistencia de un elemento se define como su capacidad para resistir esfuerzos y fuerzas aplicadas sin romperse, adquirir deformaciones permanentes o deteriorarse de algún modo.
 
 Un modelo de resistencia de materiales establece una relación entre las fuerzas aplicadas, también llamadas cargas o acciones, y los esfuerzos y desplazamientos inducidos por ellas. Generalmente las simplificaciones geométricas y las restricciones impuestas sobre el modo de aplicación de las cargas hacen que el campo de deformaciones y tensiones sean sencillos de calcular.
 
