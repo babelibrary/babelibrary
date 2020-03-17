@@ -1,0 +1,81 @@
+.area-card
+{
+    background-color: #446491;
+    border-radius: 25px;
+    width: 75%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.area-card > p
+{
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.area-card > a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.area-card > a:hover img
+{
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 25px 0 rgba(0, 0, 0, 0.19);
+}
+
+.area-card img
+{
+    width: 100%;
+    height: 230px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.area-card ul
+{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.area-card ul > li
+{
+    display: inline-block;
+    background-color: #5068a9;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin: 1px;
+}
+
+.area-card ul > li:hover
+{
+    background-color: #405388;
+}
+
+.area-card ul > li > a
+{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px)
+{
+    .area-card
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .content > div
+    {
+        margin: auto;
+    }
+}

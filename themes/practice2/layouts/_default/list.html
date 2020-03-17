@@ -1,0 +1,5 @@
+{{ if .Params.isSection }}
+  {{ partial "section-list.html" . }}
+{{ else }}
+  {{ partial "post-list.html" . }}
+{{ end }}

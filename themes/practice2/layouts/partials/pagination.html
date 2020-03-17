@@ -1,0 +1,27 @@
+{{ $paginator := .Paginator }}
+
+<div class="col-md-12">
+    <div class="pagination text-center">
+      <ul>
+        <li><span class="page-number mx-auto">Page {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span></li>
+
+        <!-- Previous page. -->
+        {{ if $paginator.HasPrev }}
+          <li class="pagination-item prev">
+            <a href="{{ $paginator.Prev.URL }}">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </a>
+          </li>
+        {{ end }}
+
+        <!-- Next page. -->
+        {{ if $paginator.HasNext }}
+          <li class="pagination-item next">
+            <a href="{{ $paginator.Next.URL }}">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>

@@ -1,0 +1,8 @@
+baseURL = "https://babelibrary.github.io/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "Practice2"
+Paginate = 4
+summaryLength = 20
+[permalinks]
+  ingeneria = "/:sections/:title/"

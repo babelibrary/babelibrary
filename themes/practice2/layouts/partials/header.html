@@ -1,0 +1,86 @@
+{{ $CoverImgLink := print "img/" .Params.cover_img }} <!-- El print une en los dos string -->
+{{ $CoverImg := $CoverImgLink | absURL }}
+<style>
+  .cover
+  {
+    background: -webkit-linear-gradient(rgba(17, 17, 19, 0.8), rgba(17, 17, 19, 0.8)), url("{{ $CoverImg }}");
+    background: linear-gradient(rgba(17, 17, 19, 0.8), rgba(17, 17, 19, 0.8)), url("{{ $CoverImg }}"); /* The least supported option. */
+    background-attachment: fixed;
+  }     
+</style>
+
+{{ if not .Params.img }}
+  <style>
+    .cover-content > div
+    {
+      float: none;
+      margin: auto;
+    }
+  </style>
+{{ end }} 
+
+{{ if or (and .Params.areas_del_saber (not .Params.subarea_de)) (and .Params.subarea_de (not .Params.areas_del_saber)) }}
+  <style>
+    .cover-content-description div /* Contenedor de "areas del saber" y "subarea de" */
+    {
+      float: none;
+      margin: auto;
+    }
+  </style>
+{{ end }}
+
+<div class="row no-gutters cover">
+    {{ partial "navigation.html" . }}
+    <div class="col-md-12 shadow">
+      <div class="container cover-content text-center">
+        {{ $ActualSiteUrl := .Permalink }}
+        {{ with .Params.img }}
+          <div class="cover_img">    
+            {{ with (index . 0) }}
+              <img src="{{ $ActualSiteUrl }}{{ . }}" alt="{{ . }}">
+            {{ end }}
+            {{ with (index . 1) }}
+              <p>{{ . }}</p>
+            {{ end }}
+          </div>
+        {{ end }}
+
+        <div class="cover-content-description">
+          <div>
+            <h1 class="text-capitalize">{{ .Title }}</h1>
+            {{ if .Params.description }}
+              <p>{{ .Content }}</p>
+            {{ end }}
+            {{ with .Params.areas_del_saber }}
+              <div class="knowledge-areas">
+                <h5>Areas del Saber</h5>
+                <ul>
+                  {{ range $type, $value := . }}
+                    {{ if eq (len $value) 1 }}
+                      <li class="shadow-sm"><a href="#">{{ index . 0 }}</a></li>
+                    {{ else }}
+                      <li class="shadow-sm"><a href="{{ index . 1 | absURL }}">{{ index . 0 }}</a></li>
+                    {{ end }}
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+            {{ with .Params.subarea_de }}
+              <div class="sub-area">
+                <h5>Subárea de</h5>
+                <ul>
+                    {{ range $type, $value := . }}
+                      {{ if eq (len $value) 1 }}
+                        <li class="shadow-sm"><a href="#">{{ index . 0 }}</a></li>
+                      {{ else }}
+                        <li class="shadow-sm"><a href="{{ index . 1 | absURL }}">{{ index . 0 }}</a></li>
+                      {{ end }}
+                    {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

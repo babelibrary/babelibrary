@@ -1,0 +1,156 @@
+* 
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body::-webkit-scrollbar 
+{
+  width: 0.7em;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb 
+{
+  background-color: #C33764;
+  outline: 1px solid #C33764;
+}
+
+body::-webkit-scrollbar-track
+{
+  background: #000;
+}
+
+.cover
+{
+  min-height: 550px;
+  background: black;
+  overflow: hidden;
+  background: #C33764;  /* fallback colour. Make sure this is just one solid colour. */
+}
+
+.cover-content
+{
+  display: flex;
+  align-items: center;
+}
+
+.cover-content::after
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cover_img
+{
+  float: left;
+  width: 35%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.cover_img img
+{
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cover_img p
+{
+  margin-top: 5px;
+}
+
+.cover-content-description
+{
+  float: left;
+  width: 65%;
+  padding: 10px;
+}
+
+.cover-content-description > div div /* Contenedor de "areas del saber" y "subarea de" */
+{
+  float: left;
+  width: 50%;
+  margin-top: 10px;
+}
+
+.cover-content-description > div div h5
+{
+  margin: auto;
+  width: 200px;
+  border-bottom: 3px solid #6c5fa7;
+}
+
+.cover-content-description > div div ul
+{
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.cover-content-description > div div ul > li
+{
+    display: inline-block;
+    background-color: #5068a9;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin: 1px;
+}
+
+.cover-content-description > div div ul > li:hover
+{
+    background-color: #405388;
+}
+
+.cover-content-description > div div ul > li > a
+{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px)
+{
+  .cover-content
+  {
+    display: block;
+  }
+
+  .cover_img, .cover-content-description
+  {
+    float: none;
+    margin: auto;
+  }
+
+  .cover_img
+  {
+    width: 500px;
+  }
+
+  .cover-content-description
+  {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  .cover_img
+  {
+    width: 100%;
+  }
+
+  .cover-content-description > div div
+  {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
